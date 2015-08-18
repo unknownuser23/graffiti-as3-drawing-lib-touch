@@ -125,7 +125,7 @@ package com.nocircleno.graffiti.interaction
          {
             _target.removeEventListener(Event.ENTER_FRAME, drawToFrame);
             
-            if(_interactionCompleteCallback)
+            if(_interactionCompleteCallback())
             {
                _interactionCompleteCallback.call(_target);
             }
